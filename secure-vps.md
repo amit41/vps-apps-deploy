@@ -70,6 +70,14 @@ Check ownership:
 
 -- should show the new username as owner
 
+In case problem in login using new user, follow this steps:
+
+`chown -R <newuser>:<newuser> /home/<newuser>/.ssh`
+
+`chmod 700 /home/<newuser>/.ssh`
+
+`chmod 600 /home/<newuser>/.ssh/authorized_keys`
+
 # 4. Generate an SSH key on your local machine
 
 On Windows (PowerShell, recommended):
