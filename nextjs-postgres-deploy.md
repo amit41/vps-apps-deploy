@@ -70,8 +70,8 @@ Create `apps` folder and clone the sample project (or clone your own):
 ```bash
 mkdir -p ~/apps
 cd ~/apps
-git clone https://github.com/codinginflow/next-self-hosting
-cd next-self-hosting/
+git clone <your-git-repo>
+cd <your-git-repo>
 ```
 
 Create the `.env` file (example using `nano`):
@@ -83,7 +83,7 @@ sudo nano .env
 Add these lines (replace placeholders):
 
 ```
-NEXT_PUBLIC_APP_TITLE="Self-Hosting Next.js Tutorial"
+NEXT_PUBLIC_APP_TITLE="My App Title"
 DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<database_name>?schema=public"
 ```
 
@@ -217,6 +217,7 @@ sudo certbot renew --dry-run
 - `<password>` — password for the DB user
 - `<your-server-ip>` — public IP of your VPS
 - `your-domain.com` — your purchased domain
+- `<your-git-repo>` — you project github repository
 
 ## Post-deploy checklist
 
